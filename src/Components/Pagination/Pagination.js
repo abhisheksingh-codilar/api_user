@@ -96,18 +96,20 @@ export default function Pagination({setstate}) {
      
     // },[])
 
-    // const changeContent = (evt) =>{
-    //     let val =${evt.target.value}
+    const changeContent = (evt) =>{
+        let val =evt.target.value;
+        // console.log(val);
+        setstate(val);
         
-    // }
+    }
 
     return (
         <>
 
            {/* <button onClick={prev}>prev</button> */}
                 {page.map((id) =>
-                    // <button key={id} value={id} onClick={changeContent}>{id}</button>
-                    <button key={id} value={id} >{id}</button>
+                    <button key={id} value={id} onClick={changeContent} >{id}</button>
+                    // <button key={id} value={id} >{id}</button>
                 )}
                 {/* <button onClick={next}>next</button>  */}
         </>
