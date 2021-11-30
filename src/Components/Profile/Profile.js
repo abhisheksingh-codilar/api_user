@@ -5,7 +5,7 @@ export default function Profile() {
     const [user,setUser] =  useState([]);
 
     const getUsers= async() =>{
-        const response = await fetch('https://reqres.in/api/users?page=2');
+        const response = await fetch('https://reqres.in/api/users?page=1');
         const data = await response.json();
         setUser (data.data);
         console.log(data);

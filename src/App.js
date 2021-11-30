@@ -5,12 +5,13 @@ import Profile from './Components/Profile/Profile';
 
 function App() {
   
+  // const [state, setstate] = useState(1);
  
   return (
-    <>
-      <Profile/>
-      {/* <Pagination/> */}
-    </>
+    <div className="mainApp">
+      <Profile  />
+      <Pagination />
+    </div>
   );
 }
 
